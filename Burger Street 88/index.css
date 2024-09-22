@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Raleway', sans-serif;
+
+}
+header{
+    background: #0C0C0C;
+    padding: 18px 0;
+}
+.container{
+    max-width: 1016px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    column-gap: 5px;
+}
+.vector a{
+    display: flex;
+}
+.dostofka{
+    display: flex;
+    column-gap: 20px;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inherit;
+}
+nav{
+    background-color: black;
+    border: 1px solid rgba(125, 115, 115, 0.5);
+}
+.nav__link{
+    padding: 22px 14px;
+}
+.nav__link:hover{
+    background: #69CF17BF;
+}
+.banner{
+    min-height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.banner__content{
+    position: relative;
+    flex-grow: 1;
+}
+.banner img{
+    object-fit: cover;
+    position: absolute;
+}
+.banner__content h1{
+    color: #69CF17;
+    font-size: 72px;
+}
+.banner__title{
+    color: #69CF17;
+    font-size: 36px;
+    margin: 18px 0;
+}
+.banner__text{
+    color: white;
+}
+.banner__content a{
+    text-decoration: none;
+    color: white;
+}
+.banner__content .summa{
+    background: rgba(105, 207, 23, 0.5);
+    color: white;
+    font-size: 50px;
+    padding: 33px 76px;
+}
+.btn{
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px 71px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+section:nth-child(1){
+    background-color: #0C0C0C;
+    padding-bottom: 40px;
+}
+.qora{
+    background-color: #0C0C0C;
+    padding: 15px 0;
+}
+.menues a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 20px 5px;
+    padding: 0 15px;
+    position: relative;
+}
+.menues{
+    background: #292929;
+    padding-bottom: 10px;
+}
+.menues a::after{
+    content: ''; 
+    position: absolute; 
+    width: auto; 
+    height: 2px; 
+    background-color: white; 
+    left: 0; 
+    top: 45px;
+    transition: .5s; 
+}
+.menues a:hover::after{
+    width: 100%; 
+}
+.menyu{
+    background: #393636;
+    width: 100%;
+    height: 100%;
+}
+.card__imges{
+    margin-top: 16px;
+    position: relative;
+    overflow: hidden;
+    max-width: 338px;
+    width: 100%;
+}
+.card__imges::after{
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: url(images/korzinka.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #69CF17E5;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s;
+    transform: translateX(-450px) rotate(0);
+}
+.card__imges:hover::after{
+    transform: translateX(0) rotate(720deg);
+}
+
+.card__tiitle{
+    color: white;
+    margin: 15px;
+}
+.card__text{
+    max-width: 338px;
+    width: 100%;
+    color: white;
+}
+.card{
+    background-color: black;
+    max-width: 350px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px 16px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+section:nth-child(4) h1{
+    color: #69CF17;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 20px 0;
+    text-align: center;
+}
+.Tel{
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+    height: 268px;
+}
+.tels p{
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.tels img{
+    margin-top: 45px;
+}
+.tels{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+.tel{
+    color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 45px;
+    margin-top: 104px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.footer{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    background: #1A3406;
+    padding: 19px 0;
+}
+
+.maps{
+    width: 100%;
+}
+
+.street__88{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
